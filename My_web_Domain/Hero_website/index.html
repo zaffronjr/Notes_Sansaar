@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes Page Homepage</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.16/dist/tailwind.min.css"
+    />
+    <!-- Add this to the head section of your HTML file -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+   
+
+    <!-- Add this to the bottom of the body section of your HTML file, after the jQuery script tag -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-white shadow-lg">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between py-4">
+          <div id="logo"><img src="images/SPRK_default_preset_name_custom.svg" id="logo" alt="#"></div>
+          <ul class="flex">
+            <li class="ml-4">
+              <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
+            </li>
+            <li class="ml-4">
+              <a href="#" class="text-gray-600 hover:text-gray-800">Notes</a>
+            </li>
+            <li class="ml-4">
+              <a href="#" class="text-gray-600 hover:text-gray-800">About</a>
+            </li>
+            <li>
+                <a><button onclick="toggleMode()">Toggle Mode</button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mx-auto flex_box px-4 py-8">
+      <h2 class="text-2xl font-bold mb-4">Notes By Streams</h2>
+      <div class="slider">
+        <div class="slider__item bg-white rounded-lg shadow-md p-4">
+          <a href="index_2.html"><h3 class="text-lg font-bold mb-2">Engineering Notes</h3></a>
+          <p class="text-gray-700">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at
+            lorem felis. Duis lacinia, metus in gravida malesuada, leo massa
+            rhoncus augue, id mollis nunc nibh a nulla.
+          </p>
+          <p class="text-gray-500 mt-2">Created on March 1, 2023</p>
+        </div>
+        <div class="slider__item bg-white rounded-lg shadow-md p-4">
+          <h3 class="text-lg font-bold mb-2">BCS-CSIT Notes</h3>
+          <p class="text-gray-700">
+            Praesent euismod, velit eu ullamcorper eleifend, dolor nisl
+            elementum quam, in ultrices eros augue a nisi. Maecenas eget sapien
+            euismod, consequat velit vitae, ullamcorper quam.
+          </p>
+          <p class="text-gray-500 mt-2">Created on March 2, 2023</p>
+        </div>
+        <div class="slider__item bg-white rounded-lg shadow-md p-4">
+          <h3 class="text-lg font-bold mb-2">BCA Notes</h3>
+          <p class="text-gray-700">
+            Integer eu eros massa. Ut suscipit risus at nisl feugiat, a
+            elementum enim feugiat. Nullam consequat, felis ac vestibulum
+            varius, nibh nibh tristique nunc, quis congue tellus odio vel
+            tortor.
+          </p>
+          <p class="text-gray-500 mt-2">Created on March 3, 2023</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="photos">
+      <div class="area"><img src="images/pexels-jasmin-chew-14664626.jpg" alt=""></div>
+      <div class="area"><img src="images/pexels-jasmin-chew-14664626.jpg" alt=""></div>
+      <div class="area"><img src="images/pexels-jasmin-chew-14664626.jpg" alt=""></div>
+    </div> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="script.js"></script>
+  </body>
+</html>
